@@ -8,8 +8,8 @@
 <body>
 	<div class="cage4">
 		<dl>
-			<dt><span onmousedown="down();" onclick="turn();">播放列表<div id="tri"></div></span>
-				<dd id="table">
+			<dt><span id="change">播放列表<div id="tri"></div></span>
+				<dd id="dd1">
 					<ul>
 						<li><a href="#">我我我我我我我</a></li>
 						<li><a href="#">是是是</a></li>
@@ -24,15 +24,26 @@
 	</div>
 </body>
 <script>
-	function down()
+window.onload=function()
+{
+	var oDd=document.getElementById('dd1');
+	var oTri=document.getElementById('tri');
+	var oChange=document.getElementById('change');
+
+	oChange.onclick=function()
 	{
-		var oTable=document.getElementById('table');
-		oTable.style.display='block';
-	}
-	function turn()
-	{
-		var oTri=document.getElementById('tri');
-		oTri.style.transform='rotate(180deg)';
+		if (oDd.style.display=='none')
+		{
+			oDd.style.display='block';
+			oTri.style.transform='rotate(180deg)';
+		}
+		else
+		{
+			oDd.style.display='none';
+			oTri.style.transform='rotate(0deg)';
+		}
 		oTri.style.transition='all 0.2s linear';
-	}
+	};
+	
+};
 </script>
