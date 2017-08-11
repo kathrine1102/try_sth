@@ -12,7 +12,7 @@ img { border: none; }
 header
 {
 	width: 100%; height: 797px;
-	background: url("images/header_bg.png") center 50% no-repeat;	        
+	background: url("../images/header_bg.png") center 50% no-repeat;	        
 }
 .date
 {
@@ -31,7 +31,7 @@ header
 .body_top
 {
 	height: 272px;
-	background: url(images/body_bg1.png) center 50% no-repeat;
+	background: url(../images/body_bg1.png) center 50% no-repeat;
 }
 .body_top>p:last-child
 {
@@ -43,7 +43,7 @@ header
 .coupon
 {
 	height: 214px;
-	background: url(images/coupon_bg.png) center 50% no-repeat;
+	background: url(../images/coupon_bg.png) center 50% no-repeat;
 	
 }		
 .coupon p
@@ -115,14 +115,13 @@ header
 	width: 28px; height: 124px; text-align: center; line-height: 20px;
 	padding-top: 12px; margin-top: 14px;			
 	border: 1px #f00 solid;
-	/*background: url(images/box_bg.png) 4px 104px no-repeat;*/
 }
 .box2>a:first-child { color: #c00; font-size: 18px; font-family: "方正兰亭黑简体"; z-index: 1; }
 .box2>a:last-child
 {
 	display: inline-block;
 	width: 30px; height: 32px;
-	background: url(images/box_bg.png) 4px 10px no-repeat;
+	background: url(../images/box_bg.png) 4px 10px no-repeat;
 	cursor: pointer;
 }
 .right .box1 { float: right; }
@@ -136,7 +135,7 @@ header
 .body_
 {
 	height: 1388px;
-	background: url(images/body_bg2.png) center 50% no-repeat;
+	background: url(../images/body_bg2.png) center 50% no-repeat;
 }
 .body_>p:first-child
 {
@@ -181,33 +180,33 @@ header
 .body_ .pic .p1
 {
 	width: 355px; height: 436px;
-	background: url(images/daxia.png) no-repeat;
+	background: url(../images/daxia.png) no-repeat;
 	
 }
 .body_ .pic .p2
 {
 	width: 279px; height: 267px;
-	background: url(images/huajia.png) no-repeat;
+	background: url(../images/huajia.png) no-repeat;
 }
 .body_ .pic .p3
 {
 	width: 322px; height: 267px;
-	background: url(images/pipi.png) no-repeat;
+	background: url(../images/pipi.png) no-repeat;
 }
 .body_ .pic .p4
 {
 	width: 279px; height: 160px;
-	background: url(images/jiweixia.png) no-repeat;
+	background: url(../images/jiweixia.png) no-repeat;
 }
 .body_ .pic .p5
 {
 	width: 157px; height: 160px;
-	background: url(images/yu.png) no-repeat;
+	background: url(../images/yu.png) no-repeat;
 }
 .body_ .pic .p6
 {
 	width: 157px; height: 160px;
-	background: url(images/xie.png) no-repeat;
+	background: url(../images/xie.png) no-repeat;
 }
 .body_ .pic p
 {
@@ -312,7 +311,7 @@ header
 {
 	float: left;
 	-ms-width:508px; height: 150px; padding-top: 74px; padding-left: 10px;
-	background: url(images/hsh.png) 24px 200px no-repeat;
+	background: url(../images/hsh.png) 24px 200px no-repeat;
 	overflow: hidden;
 }
 .intro li
@@ -355,7 +354,7 @@ header
 	display: inline-block; position: relative; top: -8px;
 	width: 142px; height: 34px; line-height: 34px;
 	color: #fff; font-size: 20px; font-style: normal; font-weight: 200;
-	background: url(images/intro_bg.png) no-repeat;
+	background: url(../images/intro_bg.png) no-repeat;
 }
 
 
@@ -363,7 +362,7 @@ header
 .body_bottom
 {
 	height: 1080px;
-	background: url(images/body_bg3.png) center 50% no-repeat;
+	background: url(../images/body_bg3.png) center 50% no-repeat;
 }
 .body_bottom>.intro:last-child
 {
