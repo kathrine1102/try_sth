@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link id="link1" rel="stylesheet" href="css/css.css">
+	<title>08-10</title>
+</head>
+<body>
+	<div class="cage4">
+		<dl>
+			<dt><span id="change">播放列表<div id="tri"></div></span>
+				<dd id="dd1">
+					<ul>
+						<li><a href="#">我我我我我我我</a></li>
+						<li><a href="#">是是是</a></li>
+						<li><a href="#">个个个个个</a></li>
+						<li><a href="#">小小小小</a></li>
+						<li><a href="#">垃垃</a></li>
+						<li><a href="#">圾圾圾圾</a></li>
+					</ul>
+				</dd>
+			</dt>
+		</dl>
+	</div>
+</body>
+<script>
+window.onload=function()
+{
+	var oDd=document.getElementById('dd1');
+	var oTri=document.getElementById('tri');
+	var oChange=document.getElementById('change');
+
+	oChange.onclick=function()
+	{
+		if (window.getComputedStyle(oDd).display=='none')
+		{
+			oDd.style.display='block';
+			oTri.style.transform='rotate(180deg)';
+		}
+		else
+		{
+			oDd.style.display='none';
+			oTri.style.transform='rotate(0deg)';
+		}
+		oTri.style.transition='all 0.2s linear';
+	};
+	
+};
+</script>
