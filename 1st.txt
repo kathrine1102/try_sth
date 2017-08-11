@@ -32,7 +32,7 @@ window.onload=function()
 
 	oChange.onclick=function()
 	{
-		if (oDd.style.display=='none')
+		if (window.getComputedStyle(oDd).display=='none')
 		{
 			oDd.style.display='block';
 			oTri.style.transform='rotate(180deg)';
