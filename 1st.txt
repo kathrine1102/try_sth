@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link id="link1" rel="stylesheet" href="css/css.css">
+	<title>08-10</title>
+</head>
+<body>
+	<div class="cage4">
+		<dl>
+			<dt><span onmousedown="down();" onclick="turn();">播放列表<div id="tri"></div></span>
+				<dd id="table">
+					<ul>
+						<li><a href="#">我我我我我我我</a></li>
+						<li><a href="#">是是是</a></li>
+						<li><a href="#">个个个个个</a></li>
+						<li><a href="#">小小小小</a></li>
+						<li><a href="#">垃垃</a></li>
+						<li><a href="#">圾圾圾圾</a></li>
+					</ul>
+				</dd>
+			</dt>
+		</dl>
+	</div>
+</body>
+<script>
+	function down()
+	{
+		var oTable=document.getElementById('table');
+		oTable.style.display='block';
+	}
+	function turn()
+	{
+		var oTri=document.getElementById('tri');
+		oTri.style.transform='rotate(180deg)';
+		oTri.style.transition='all 0.2s linear';
+	}
+</script>
