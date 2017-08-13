@@ -15,6 +15,7 @@
 {
 	display: inline-block; width: 220px;
 	position: relative; left: -20px;
+	margin-left: 10px;
 	cursor: pointer;
 }
 .cage4 dd
@@ -40,7 +41,7 @@
 #tri
 {
 	float: right;
-	position: relative; top: 12px; right: 20px;
+	position: relative; top: 12px; right: 22px;
 	width: 0px; height: 0px;
 	border-width: 8px 8px 0px 8px;
 	border-color: #555 transparent;
