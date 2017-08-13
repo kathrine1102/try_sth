@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link id="link1" rel="stylesheet" href="css/css.css">
+	<title>08-13</title>
+
+</head>
+ <body>
+ 
+	<div>
+		<form action="">
+			<label id="check"><input type="checkbox" name="">全选</label><br/>
+			<input type="checkbox"><br/>
+			<input type="checkbox"><br/>
+			<input type="checkbox"><br/>
+			<input type="checkbox"><br/>
+			<input type="checkbox"><br/>
+			<input type="checkbox"><br/>
+			<input type="checkbox"><br/>
+		</form>
+	</div>
+
+<script>
+window.onload=function()
+{
+	var oCheck=document.getElementById('check');
+	var oBox=document.getElementsByTagName('input');
+
+	oCheck.onclick=function()
+	{
+		var i;
+		if (oBox[0].checked==true)
+		{
+			for(i=0;i<oBox.length;i++)
+			{
+				oBox[i].checked=true;
+			}
+		}
+		else if (oBox[0].checked==false)
+		{
+			for(i=0;i<oBox.length;i++)
+			{
+				oBox[i].checked=false;
+			}
+		}
+	};
+
+};
+
+</script>
+	
+</body>
+</html>
