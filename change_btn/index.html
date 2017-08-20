@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>08-18</title>
+	<style>
+		input
+		{
+			background: #fff;
+			cursor: pointer;
+			outline: none;
+		}
+		.active
+		{
+			background: yellow;
+		}
+	</style>
+</head>
+<body>
+	<form action="">
+		<input class="active" type="button" value="1">
+		<input type="button" value="2">
+		<input type="button" value="3">
+	</form>
+
+<script>
+	window.onload=function()
+	{
+		var aBtn=document.getElementsByTagName('input');
+		i=0;
+		for(;i<aBtn.length;i++)
+		{
+			aBtn[i].onclick=function()
+			{
+				for(i=0;i<aBtn.length;i++)
+				{
+					aBtn[i].className='';
+				}
+				this.className='active';
+			}
+		}
+	}
+</script>
+
+</body>
+</html>
