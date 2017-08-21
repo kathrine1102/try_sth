@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>08-21</title>
+	<style>
+		input
+		{
+			background: #fff;
+			cursor: pointer;
+			outline: none;
+		}
+		.active
+		{
+			background: yellow;
+		}
+		div
+		{
+			display: none;
+			width: 200px; height: 200px;
+			background: pink;
+		}
+
+	</style>
+</head>
+<body>
+	<form action="">
+		<input class="active" type="button" value="1">
+		<input type="button" value="2">
+		<input type="button" value="3">
+		<div style="display: block;">111</div>
+		<div>222</div>
+		<div>333</div>
+	</form>
+
+<script>
+	window.onload=function()
+	{
+		var aBtn=document.getElementsByTagName('input');
+		var aDiv=document.getElementsByTagName('div');
+		var i;
+		for(i=0;i<aBtn.length;i++)
+		{
+			aBtn[i].index=i;
+			aBtn[i].onclick=function()
+			{
+				for(i=0;i<aBtn.length;i++)
+				{
+					aBtn[i].className='';
+					aDiv[i].style.display='none';
+				}
+				this.className='active';
+				aDiv[this.index].style.display='block';
+			}
+		}
+	}
+</script>
+
+</body>
+</html>
