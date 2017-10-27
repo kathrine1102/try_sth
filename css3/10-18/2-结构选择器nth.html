@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>10-18</title>
+	<style>
+		body { font-size: 30px; }
+		p:nth-child(2n) { text-decoration: underline; }
+		p:nth-last-child(4n+3) { border: 4px solid green; }
+		p:nth-of-type(3) { background-color: brown; }
+		h1:nth-child(odd) { color: pink; }
+		h1:nth-last-child(1) { color: blue; }
+		h1:nth-last-of-type(2) { text-decoration: underline purple; }
+		h2:nth-child(2n-1) { color: yellow; }
+		h2:nth-child(even) { background-color: blue; }
+		h2:empty { border: 4px solid #515151; }
+	</style>
+</head>
+<body>
+	<p>p1</p>     <!-- 1 -->
+	<p>p2</p>     <!-- 2 -->
+	<h1>h1</h1>   <!-- 3 -->
+	<h2>h2</h2>   <!-- 4 -->
+	<p>p3</p>     <!-- 5 -->
+	<p>p4</p>     <!-- 6 -->
+	<h1>h1,2</h1> <!-- 7 -->
+	<h2>h2,2</h2> <!-- 8 -->
+	<h2>h2,3</h2> <!-- 9 -->
+	<h2></h2>     <!-- 10 -->
+	<h1>h1,3</h1> <!-- 11 -->	
+</body>
+</html>

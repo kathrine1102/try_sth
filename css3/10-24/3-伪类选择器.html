@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>10-24</title>
+	<style>
+		div
+		{
+			width: 300px; height: 200px; display: none; margin-bottom: 20px;
+			font: 100px/200px "微软雅黑"; text-align: center;
+			background-color: #000; color: #fff;
+		}
+		div:target{ display: block; }
+
+		input:first-child{ margin: 10px auto; }
+
+		label{ float: left; margin: 0px 2px; overflow: hidden; position: relative; }
+		label input{ position: absolute; top: -50px; left: -50px; }/**/
+		input:checked~span{ background-color: blue; }
+		span{ display: block; width: 50px; height: 50px; border: 3px solid #000; }
+	</style>
+</head>
+<body>
+	<a href="#div1">div1</a>
+	<div id="div1">div1</div>
+
+	<form>
+		<input type="text" name="text" value="please input"><br/>
+
+		<label>
+			<input type="radio" name="space">
+			<span></span>
+		</label>
+		<label>
+			<input type="radio" name="space">
+			<span></span>
+		</label>
+		<label>
+			<input type="radio" name="space">
+			<span></span>
+		</label>
+		<label>
+			<input type="checkbox" name="space">
+			<span></span>
+		</label>
+		<label>
+			<input type="checkbox" name="space">
+			<span></span>
+		</label>
+		<label>
+			<input type="checkbox" name="space">
+			<span></span>
+		</label>
+	</form>
+</body>
+</html>

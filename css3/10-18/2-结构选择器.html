@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>10-18</title>
+	<style>
+		body { font-size: 30px; }
+		span { display: block; height: 30px; }
+		h3 { height: 30px; font-size: 26px;}
+		p:first-child { color: blue; }
+		p:last-child { color: yellow; }
+		h2:last-child { text-decoration: underline; } /*无效，父元素的last child不是h2*/
+		h2:first-of-type { background-color: pink; }
+		h1:last-of-type { background-color: green; }
+		span:only-child { background-color: yellow; }
+		h3:only-of-type { background-color: brown; }
+	</style>
+</head>
+<body>
+	<p>p1.1</p>
+	<h1>h1.2</h1>
+	<p>p2.3</p>
+	<h2>h2.4</h2>
+	<p>p3.5</p>
+	<h1>h1.6</h1>
+	<p>p4.7</p>
+	<h2>h2.8</h2>
+	<h3>h3.9</h3>
+	<p><span>span</span></p>
+	<p><span>span</span></p>
+	<p>p6.11</p>
+</body>
+</html>

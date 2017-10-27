@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>10-18</title>
+	<style>
+		p[name]{ text-decoration: underline; font-size: 30px;}                /*指定“属性名为‘name’的属性”*/
+		p[name="cat"] { color: pink; }                        /*指定“属性值为‘cat’或词列表中有‘cat’的属性”*/
+		p[name~="dog"] { color: blue; }                       /*指定“属性值词列表中有‘dog’或属性值为‘dog’的属性”*/
+		p[name^="c"] { color: red; }                          /*指定“属性值以‘c’开头的属性”*/
+		p[name$="a"] { color: brown; }                        /*指定“属性值以‘a’结尾的属性”*/
+		p[name*="l"] { text-decoration-color: green; }        /*指定“属性值包含了‘l’的属性”*/
+		p[name|="l"] { background-color: pink; }              /*指定“属性值是‘l’或以l-开头的属性”*/
+	</style>
+</head>
+<body>
+	<p name="cat">cat</p>
+	<p name="cat dog">cat</p>
+	<p name="dog">dog</p>
+	<p name="panda">panda</p>
+	<p name="gorilla">gorilla</p>
+	<p name="lion">lion</p>
+	<p name="crocodile">crocodile</p>
+	<p name="l">l</p>
+	<p name="l-ion">l-ion</p>
+</body>
+</html>
