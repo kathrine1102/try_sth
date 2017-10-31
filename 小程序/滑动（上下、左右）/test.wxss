@@ -1,0 +1,29 @@
+.section #green
+{
+  height: 200rpx;
+  background-color: green;
+}
+.section #red
+{
+  height: 200rpx;
+  background-color: red;
+}
+.section #yellow
+{
+  height: 200rpx;
+  background-color: yellow;
+}
+.section #blue
+{
+  height: 200rpx;
+  background-color: blue;
+}
+.scroll-view_H{
+  width: 100%;
+  white-space: nowrap;
+}
+.scroll-view-item_H{
+  width: 200px;
+  height: 100px;
+  display: inline-block;
+}
